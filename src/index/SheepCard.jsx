@@ -5,7 +5,6 @@ import Button from "@material-ui/core/Button";
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Chip from '@material-ui/core/Chip';
-import Image from 'next/image'
 
   const useStyles = makeStyles((theme) => ({
     image: {
@@ -52,10 +51,9 @@ function SheepCard(props) {
           <Typography variant="overline" display="block" gutterBottom>
             {props.subtitle}
           </Typography>
-          <Image className={classes.image}
+          <img className={classes.image}
             src={props.img}
             alt={props.name}
-            layout="fill"
           />
         </Paper>
       </Grid>  
