@@ -10,16 +10,16 @@ import Copyright from '../src/Copyright';
 
 export default function Index() {
   const isSmallishScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
-  
-    const gutter = isSmallishScreen ? true : false;
+
+  const gutter = isSmallishScreen ? true : false;
 
   return (
     <>
-      <TopAppBar/>
+      <TopAppBar />
       <Container maxWidth="xl" disableGutters={gutter}>
-        <Igrid/>
+        <Igrid />
       </Container>
-      <Copyright/>
+      <Copyright />
     </>
   );
 }

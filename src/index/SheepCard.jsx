@@ -10,6 +10,7 @@ import Chip from '@material-ui/core/Chip';
     image: {
       maxWidth: '100%',
       height: 'auto',
+      maxHeight: 370,
       resizeMode: 'contain',
       borderRadius: '21px',
       },
@@ -40,12 +41,12 @@ function SheepCard(props) {
       <Grid item xs={12} md={6}>
         <Paper className={color} square >
           <Typography variant="h4" gutterBottom>
-            {props.title + " "}
-            <Chip
+            {props.title + " ~"}
+            {/* <Chip
               label={props.type == 'yearling' ? 'yearling ewe' : 'ewe lamb'}
               color={props.type == 'yearling' ? 'primary' : 'secondary'}
               className={classes.sheepChip}
-            />
+            /> */}
           </Typography>
           <Typography variant="overline" display="block" gutterBottom>
             {props.subtitle}

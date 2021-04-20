@@ -19,8 +19,14 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>My page</title>
+        <title>Harrogate West Katahdins</title>
+
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <link
+          rel="shortcut icon"
+          type="image/png"
+          href="https://cdn.glitch.com/7a3448a1-501e-4ba6-aeee-bcaae4dd447e%2Fnewfile.png?v=1568411397239"
+        />
       </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}

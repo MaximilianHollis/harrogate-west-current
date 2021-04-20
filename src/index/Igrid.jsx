@@ -7,11 +7,8 @@ import Title from './Title';
 import Hidden from '@material-ui/core/Hidden';
 import withWidth from '@material-ui/core/withWidth';
 import SheepCard from './SheepCard';
-import Daisy from '../../Media/Daisy.jpg';
-import Gigi from '../../Media/Gigi.jpg';
-import Juley from '../../Media/Juley.jpg';
-import Sammi from '../../Media/Sammi.jpg';
-import Tanya from '../../Media/Tanya.jpg';
+import { Alert, AlertTitle } from '@material-ui/lab';
+import sheep from '../../data/sheep'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     height: 400,
     backgroundColor: theme.palette.background.light,
+    marginBottom: theme.spacing(2),
   },
   paperLight: {
     padding: theme.spacing(1),
@@ -38,61 +36,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const sheep = [
-  {
-    id: 1,
-    name: "Daisy",
-    dark: true,
-    title: "Daisy",
-    type: 'lamb',
-    subtitle: "HGT67 – Singleton - born April 2020 - $400.",
-    img: Daisy
-  },
-  {
-    id: 2,
-    name: "Gigi",
-    dark: false,
-    title: "Gigi",
-    type: 'lamb',
-    subtitle: "HGT66 – Triplet - born Feb 2020 - $400.",
-    img: Gigi
-  },
-  {
-    id: 3,
-    name: "Juley",
-    dark: false,
-    title: "Juley",
-    type: 'yearling',
-    subtitle: "HGT59 – Twin - born April 2019 - $400.",
-    img: Juley
-  },
-  {
-    id: 4,
-    name: "Sammi",
-    dark: true,
-    title: "Sammi",
-    type: 'lamb',
-    subtitle: "HGT63 – Triplet - born Feb 2020 - $400.",
-    img: Sammi
-  },
-  {
-    id: 5,
-    name: "Tanya",
-    dark: true,
-    title: "Tanya",
-    type: 'yearling',
-    subtitle: "HGT60 – Singleton - born April 2019 - $400.",
-    img: Tanya
-  }, 
-]
-const listSheep = sheep.map((sheep) => 
-<SheepCard
- key={sheep.id}
-  dark={sheep.dark}
-  img={sheep.img}
-  title={sheep.title}
-  subtitle={sheep.subtitle} 
-  type={sheep.type}
+
+const listSheep = sheep.map((sheep) =>
+  <SheepCard
+    key={sheep.id}
+    dark={sheep.dark}
+    img={sheep.img}
+    title={sheep.title}
+    subtitle={sheep.subtitle}
+    type={sheep.type}
   />
 )
 
@@ -105,14 +57,20 @@ function IGrid(props) {
       <Grid container spacing={2}>
         <Grid item xs={12} md={12}>
           <Paper className={classes.title} square >
-            <Title/>
+            <Title />
           </Paper>
+          <Alert severity="info">
+            <AlertTitle>2021 Lamb Crop</AlertTitle>
+            Ewes $400 — Rams $350  
+          </Alert>
+
+
         </Grid>
         <>{listSheep}</>
         <Hidden smDown>
           <Grid item xs={12} md={6}>
             <Paper className={classes.paperLight} square >
-               {}
+              { }
             </Paper>
           </Grid>
         </Hidden>

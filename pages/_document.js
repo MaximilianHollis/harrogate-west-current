@@ -10,6 +10,8 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
+          <meta name="description" content="Since 2011, we’ve been breeding our small flock of Registered 100% RR
+          Katahdins in Sykesville, Maryland." />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
