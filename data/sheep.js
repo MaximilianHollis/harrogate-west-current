@@ -6,7 +6,7 @@ import Tanya from '../Media/Tanya.jpg';
 import Mocha from '../Media/Mocha.jpg';
 import Carmen from '../Media/Carmen.jpg';
 import A from '../Media/1.jpg';
-import B from '../Media/2.jpg';
+import Winnie from '../Media/2.jpg';
 import C from '../Media/3.jpg';
 
 const sheep = [
@@ -34,8 +34,8 @@ const sheep = [
     dark: false,
     title: "",
     type: 'yearling',
-    subtitle: "The flock",
-    img: A
+    subtitle: "Ewe-February 2021",
+    img: Winnie
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const sheep = [
     title: "",
     type: 'lamb',
     subtitle: "more info coming soon",
-    img: B
+    img: A
   },
   {
     id: 5,
