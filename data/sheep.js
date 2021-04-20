@@ -30,7 +30,7 @@ const sheep = [
   },
   {
     id: 3,
-    name: "",
+    name: "flock",
     dark: false,
     title: "",
     type: 'yearling',
@@ -39,7 +39,7 @@ const sheep = [
   },
   {
     id: 4,
-    name: "",
+    name: "sheep",
     dark: true,
     title: "",
     type: 'lamb',
@@ -48,7 +48,7 @@ const sheep = [
   },
   {
     id: 5,
-    name: "",
+    name: "sheep",
     dark: true,
     title: "",
     type: 'yearling',
