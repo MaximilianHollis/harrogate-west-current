@@ -8,7 +8,7 @@ import Hidden from '@material-ui/core/Hidden';
 import withWidth from '@material-ui/core/withWidth';
 import SheepCard from './SheepCard';
 import { Alert, AlertTitle } from '@material-ui/lab';
-import sheep from '../../data/sheep'
+import sheep from '../data/sheep'
 
 const useStyles = makeStyles((theme) => ({
   root: {
