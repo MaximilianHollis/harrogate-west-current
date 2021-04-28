@@ -49,7 +49,7 @@ function SheepCard(props) {
               className={classes.sheepChip}
             />
           </Typography>
-          <Typography variant="overline" display="block" gutterBottom>
+          <Typography variant="subtitle1" display="block" gutterBottom>
             {props.subtitle}
           </Typography>
           <img className={classes.image}

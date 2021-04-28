@@ -32,6 +32,9 @@ const theme = createMuiTheme({
     h6: {
       fontFamily: "Courgette"
     },
+    subtitle1: {
+      fontFamily: "Courgette"
+    },
     useNextVariants: true,
     fontFamily: [ 
       'Roboto',
