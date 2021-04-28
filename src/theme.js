@@ -24,7 +24,10 @@ const theme = createMuiTheme({
       fontFamily: "Courgette"
     },
     h4: {
-      fontFamily: "Courgette"
+      fontFamily: "Courgette",
+    },
+    h5: {
+      fontFamily: "Courgette",
     },
     h6: {
       fontFamily: "Courgette"

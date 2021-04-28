@@ -4,7 +4,7 @@ const sheep = [
     name: "Mocha",
     dark: true,
     title: "Mocha",
-    type: '',
+    type: 'Twin',
     subtitle: "Ewe - March 2021",
     img: './Mocha.jpg'
   },
@@ -13,7 +13,7 @@ const sheep = [
     name: "Carmen",
     dark: false,
     title: "Carmen",
-    type: 'lamb',
+    type: 'Twin',
     subtitle: "Ewe - March 2021",
     img: './Carmen.jpg'
   },
@@ -22,7 +22,7 @@ const sheep = [
     name: "Aston",
     dark: false,
     title: "Aston",
-    type: 'yearling',
+    type: 'Triplet',
     subtitle: "Ram lamb February 2021",
     img: './Aston.jpg'
   },
@@ -31,7 +31,7 @@ const sheep = [
     name: "Dawn",
     dark: true,
     title: "Dawn",
-    type: 'lamb',
+    type: 'Triplet',
     subtitle: "Ewe Lamb February 2021",
     img: './Dawn.jpg'
   },
@@ -40,10 +40,19 @@ const sheep = [
     name: "Winnie",
     dark: true,
     title: "Winnie",
-    type: 'yearling',
+    type: 'Triplet',
     subtitle: "Ewe - February 2021",
     img: './Winnie.jpg'
   },
+  {
+    id: 6,
+    name: "Louie",
+    dark: false,
+    title: "Louie",
+    type: 'Singleton',
+    subtitle: "Ram - March 2021",
+    img: './Louie.jpg'
+  }
 ]
 
 export default sheep;

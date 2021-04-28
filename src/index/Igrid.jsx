@@ -67,13 +67,13 @@ function IGrid(props) {
 
         </Grid>
         <>{listSheep}</>
-        <Hidden smDown>
+        {/* <Hidden smDown>
           <Grid item xs={12} md={6}>
             <Paper className={classes.paperLight} square >
               { }
             </Paper>
           </Grid>
-        </Hidden>
+        </Hidden> */}
       </Grid>
     </div>
   );

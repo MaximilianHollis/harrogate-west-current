@@ -29,7 +29,8 @@ import Chip from '@material-ui/core/Chip';
     },
     sheepChip: {
       margin: 'auto',
-      transform: 'translateY(-7px)'
+      transform: 'translateY(-8px)',
+      marginLeft: '20px'
     }
   }));
 
@@ -42,11 +43,11 @@ function SheepCard(props) {
         <Paper className={color} square >
           <Typography variant="h4" gutterBottom>
             {props.title + " ~"}
-            {/* <Chip
-              label={props.type == 'yearling' ? 'yearling ewe' : 'ewe lamb'}
-              color={props.type == 'yearling' ? 'primary' : 'secondary'}
+            <Chip
+              label={props.type}
+              color={props.type == 'Twin' ? 'primary' : 'secondary'}
               className={classes.sheepChip}
-            /> */}
+            />
           </Typography>
           <Typography variant="overline" display="block" gutterBottom>
             {props.subtitle}
