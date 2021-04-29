@@ -19,30 +19,30 @@ const sheep = [
   },
   {
     id: 3,
-    name: "Aston",
-    dark: false,
-    title: "Aston",
-    type: 'Triplet',
-    subtitle: "Ram lamb February 2021",
-    img: './Aston.jpg'
-  },
-  {
-    id: 4,
     name: "Dawn",
-    dark: true,
+    dark: false,
     title: "Dawn",
     type: 'Triplet',
-    subtitle: "Ewe Lamb February 2021",
+    subtitle: "Ewe - February 2021",
     img: './Dawn.jpg'
   },
   {
-    id: 5,
+    id: 4,
     name: "Winnie",
     dark: true,
     title: "Winnie",
     type: 'Triplet',
     subtitle: "Ewe - February 2021",
     img: './Winnie.jpg'
+  },
+  {
+    id: 5,
+    name: "Aston",
+    dark: true,
+    title: "Aston",
+    type: 'Triplet',
+    subtitle: "Ram - February 2021",
+    img: './Aston.jpg'
   },
   {
     id: 6,
