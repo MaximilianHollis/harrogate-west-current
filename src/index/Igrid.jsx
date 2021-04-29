@@ -9,6 +9,7 @@ import withWidth from '@material-ui/core/withWidth';
 import SheepCard from './SheepCard';
 import { Alert, AlertTitle } from '@material-ui/lab';
 import sheep from '../data/sheep'
+import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,8 +61,10 @@ function IGrid(props) {
             <Title />
           </Paper>
           <Alert severity="info">
-            <AlertTitle>2021 Lamb Crop</AlertTitle>
-            Ewes $400 — Rams $350  
+            <AlertTitle variant='h6'>2021 Lamb Crop</AlertTitle>
+            <Typography variant="subtitle1" display="block" gutterBottom>
+              Ewes $400 — Rams $350
+            </Typography>
           </Alert>
 
 
