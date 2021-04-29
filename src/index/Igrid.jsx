@@ -60,9 +60,9 @@ function IGrid(props) {
           <Paper className={classes.title} square >
             <Title />
           </Paper>
-          <Alert severity="info">
-            <AlertTitle variant='h6'>2021 Lamb Crop</AlertTitle>
-            <Typography variant="subtitle1" display="block" gutterBottom>
+          <Alert severity="info" variant="filled" color="success">
+            <AlertTitle variant='h4' className={classes.alert}>2021 Lamb Crop</AlertTitle>
+            <Typography variant="h5" display="block" gutterBottom>
               Ewes $400 — Rams $350
             </Typography>
           </Alert>
