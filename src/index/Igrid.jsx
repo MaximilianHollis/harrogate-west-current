@@ -71,7 +71,7 @@ function IGrid(props) {
           }}>
             <AlertTitle variant='h4' className={classes.alert}>2021 Lamb Crop</AlertTitle>
             <Typography variant="h5" display="block" gutterBottom className={classes.alert}>
-              Ewes $400 — Rams $350
+              Registered Ewes $400 — Registered Rams $350
             </Typography>
           </Alert>
 
