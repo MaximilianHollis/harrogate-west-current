@@ -45,7 +45,7 @@ function SheepCard(props) {
             {props.title + " ~"}
             <Chip
               label={props.type}
-              color={props.type == 'Twin' ? 'primary' : 'secondary'}
+              color={props.type == 'Triplet' ? 'secondary' : 'primary'}
               className={classes.sheepChip}
             />
           </Typography>

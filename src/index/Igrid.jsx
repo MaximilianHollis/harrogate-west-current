@@ -35,11 +35,14 @@ const useStyles = makeStyles((theme) => ({
     height: 500,
     backgroundColor: theme.palette.background.dark,
   },
+  alertBackground: {
+    backgroundColor: theme.palette.secondary.main,
+  },
   message: {
-    width: '100%'
+    width: '100%',
   },
   alert: {
-    textAlign: 'center'
+    textAlign: 'center',
   }
 }));
 
@@ -66,8 +69,10 @@ function IGrid(props) {
           <Paper className={classes.title} square >
             <Title />
           </Paper>
-          <Alert severity="info" variant="filled" color="success" classes={{
-            message: classes.message, // class name, e.g. `classes-nesting-root-x`
+          <Alert severity="info" variant="filled" classes={{
+            message: classes.message,
+            root: classes.alertBackground,
+            // class name, e.g. `classes-nesting-root-x`
           }}>
             <AlertTitle variant='h4' className={classes.alert}>2021 Lamb Crop</AlertTitle>
             <Typography variant="h5" display="block" gutterBottom className={classes.alert}>
